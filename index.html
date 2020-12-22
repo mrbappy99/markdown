@@ -17,6 +17,8 @@
      <!-- Font awsome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+
      <!-- Title -->
     <title>Bootstrap Starter Template</title>
   
@@ -24,8 +26,8 @@
 
 <!-- Body   -->
 <body>
-<div class="jumbotron">
-    <div class="display-4 mx-auto">
+<div class="jumbotron mx-auto">
+    <div class="display-4">
         Create markdown navigation syntax
     </div>
         <hr>
@@ -33,13 +35,13 @@
         <div class="form-group mx-auto col-md-5">
             <label>Enter Title</label>
             <input id="title" type="text" class="form-control">
-            <button type="submit" class="btn btn-primary mt-2" onclick="makeNav(), copyToClipboard('#syntax'), copyMsg()">Submit & Autocopy</button>
+            <button type="submit" class="btn btn-dark mt-2" onclick="makeNav(), copyToClipboard('#syntax'), copyMsg()">Submit & Autocopy</button>
         </div>
-        <div class="card text-white bg-dark col-md-5 mx-auto" >
+        <div id="box" class="card col-md-5 mx-auto" >
             <div class="card-body">
                 <code>Syntax: </code> <br> <br>
                 <p id="syntax" class="lead"></p> <br>
-              <div style="display: none;" id="copyMsg" class="alert alert-danger">
+              <div id="copyMsg" class="alert alert-dark">
                 Syntax copied to clipboard!!
               </div>
 
