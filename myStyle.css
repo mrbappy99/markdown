@@ -1,0 +1,19 @@
+
+body {
+    background-color:#999999 !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+#title{
+    border: solid 3px black;
+}
+
+#box{
+    background-color: bisque; 
+    border: solid 10px black
+}
+
+#copyMsg{
+    display: none;
+}
+
