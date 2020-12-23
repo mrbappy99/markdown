@@ -9,7 +9,7 @@ function makeNav(){
 
     var lowerCase = words.toString().toLowerCase().split(',');
 
-    var syntax2 = lowerCase.join('+');
+    var syntax2 = lowerCase.join('-');
 
     document.getElementById('syntax').innerHTML = `[${syntax1}](#${syntax2})`;
 
